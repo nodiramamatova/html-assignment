@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap: Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <div class="text-white">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+       </div>  
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+             <li><a href="temperature.html">Max Temperature</a></li>
+              <li><a href="humidity.html">Humidity</a></li>
+              <li><a href="cloudness.html">Cloudiness</a></li>
+              <li><a href="wind_speeds.html">Wind Speeds</a></li>         
+            </ul>
+          </li>
+          <li><a href="comparison.html">Comparison</a></li>
+          <li><a href="data.html">Data</a></li>         
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+   </nav> 
+
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+
+    <!-- First Row -->
+    <div class="row">
+
+      <div class="col-md-8 pad top"> <br>
+
+        <h1>Latitude vs. Max Temperature</h1> <br>
+
+          <div class="pull-left">
+            <img src="output_data/Fig1.png" alt="Latitude vs. Max Temperature">
+          </div>
+
+        </div> <!-- 8 Columns -->
+
+        <div class="col-md-4 pad top"> <br>
+
+          <h3>Observations</h3> <br>
+
+            <div class="pull-right">
+              <p>The process selected 569 unique cities. On 05/02/2018, the highest temperature was recorded
+                 in Altus, United States at 95.52˚F. The lowest temperature recorded was Komsomolsky,
+                 Russia at -3.31˚F. 
+                 Weather is defined as the state of the atmosphere with respect to heat or cold, 
+                 wetness or dryness, calm or storm, clearness, or cloudiness. It includes temperature, 
+                 pressure, humidity, clouds, wind, precipitation, and fog.
+				 While weather relates to mostly temperature and precipitation on a day-to-day basis, 
+				 climate is the term for average atmospheric conditions over longer periods of time.
+                   </p>
+            </div>
+
+        </div> <!-- 4 Columns -->
+
+    </div> <!-- Row -->
+
+  </div> <!-- Container -->
+    
+  </body>
+  </html>
